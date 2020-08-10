@@ -1,0 +1,221 @@
+body {
+    margin: 0;
+}
+main {
+    grid-area: main;
+} 
+footer {
+    grid-area: ft;
+}
+.overall-container {
+    max-width: 900px;
+    justify-content: center;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 60px 6fr 80px;
+    grid-template-areas: 
+      "hd"
+      "main"
+      "ft";
+}
+.logonavcontainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;;   
+}
+.headerbox1 { 
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px 40px 10px;
+}
+.logonamecontainer {
+    padding: 0 10px 0 10px;
+}
+.logoname1 {
+    font-family: Reem Kufi;
+    color: black;
+    font-size: 18px;
+    font-weight: lighter;
+    position: relative;
+    bottom: 2px;
+}
+.logoname2 {
+    margin: 15px 8px 10px 0px;
+    padding: 0;
+    font-family: Reem Kufi;
+    color: #8db4c4;
+    font-size: 18px;
+    font-weight: lighter;
+    position: relative;
+    bottom: 2px;
+    letter-spacing: 1.5px
+}
+.hamburger-menu {
+
+}
+.menu-button {
+    position: relative;
+    top: 4%;
+    margin-right: 10px;
+}
+
+.burgericon {
+    margin: 0;
+    width: 24px;
+}
+ul {
+    list-style-type: none;
+}
+ul li {
+    background-color: #b3cbe6;
+    opacity: .6;
+}
+.menu-button {
+    display: inline;
+    background-color: white;
+    color: white;
+    padding: 0;
+    font-size: 20px;
+    border: none;
+    font-family: Reem Kufi;
+    display: flex;
+  }
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f1f1f1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 0;
+  }
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+.dropdown-content a:hover {
+    background-color: #ddd;
+    }
+.hamburger-menu:hover .dropdown-content {
+    display: block;
+    }
+.hamburger-menu:hover .menu-button {
+    background-color: white;
+  }
+  .find-out-more {
+    font-family: Libre Baskerville;
+    color: #254451;
+    font-weight: 500;
+    text-align: center;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0 50px 0;
+}
+#form-elements {
+  margin: auto;
+}
+#enter-email {
+  text-align: center;
+  font-family: Libre Baskerville;
+}
+.get-updates-button {
+  display: block;
+  color: white;
+  opacity: .7;
+  font-family: Libre Baskerville;
+  align-self: center;
+  padding: 10px;
+  margin: 20px;
+  width: 120px;
+  background-color: #164361;
+  border: none;
+  border-radius: 3px
+}
+.footer-span {
+    display: flex;
+    justify-content: center;
+}
+.footer-logo1, .footer-logo2 {
+  font-family: Reem Kufi;
+  color: black;
+  font-size: 18px;
+  padding: 0;
+  font-weight: lighter;
+  margin: 0 3px 0 0px;
+}
+.footer-logo2 {
+  font-family: Reem Kufi;
+  color: #8db4c4;
+  font-size: 18px;
+  font-weight: lighter;
+  letter-spacing: 1.8px;
+}
+.socialmedia-container {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+#social-media-icon {
+  width: 40px;
+  padding: 10px;
+}
+#enter-email {
+  padding: 10px; 
+}
+
+
+@media screen and (min-width: 1000px) {
+  .hero-text {
+      font-size: 24px;
+  }
+  .menu-button {
+      display: none;
+  }
+  .dropdown-content {
+      display: flex;
+      position: relative;
+      box-shadow: none;
+      background-color: transparent;
+  }
+  .dropdown-content a {
+      color: black;
+      padding: 0 15px 0 15px;
+      font-family: Roboto Condensed;
+  }
+  ul li {
+      background-color: transparent;
+      font-family: Roboto Condensed;
+  }
+  .dropdown-content a:hover {
+      background-color: transparent;
+      }
+  .hamburger-menu:hover .dropdown-content {
+      display: flex;
+      }
+  .hamburger-menu:hover .menu-button {
+      background-color: transparent;
+    }
+    .form-container {
+      display: flex;
+      flex-direction: row;
+      border: 1px solid;
+      margin-bottom: 50px;
+      justify-content: space-evenly;
+      border-color: #dadde0;
+      padding: 15px;
+    }
+    input {
+        width: 250px;
+        border: 1px solid;
+        border-color: darkgrey;
+    }
+    #form-elements {
+      margin: 15px 15px 15px 15px;
+    }
+}
