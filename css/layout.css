@@ -19,6 +19,9 @@ footer {
       "main"
       "ft";
 }
+a {
+    text-decoration: none;
+}
 .logonavcontainer {
     width: 100%;
     display: flex;
@@ -51,15 +54,6 @@ footer {
     bottom: 2px;
     letter-spacing: 1.5px
 }
-.hamburger-menu {
-
-}
-.menu-button {
-    position: relative;
-    top: 4%;
-    margin-right: 10px;
-}
-
 .burgericon {
     margin: 0;
     width: 24px;
@@ -72,22 +66,20 @@ ul li {
     opacity: .6;
 }
 .menu-button {
-    display: inline;
     background-color: white;
     color: white;
     padding: 0;
     font-size: 20px;
     border: none;
     font-family: Reem Kufi;
-    display: flex;
+    margin-right: 10px;
   }
-
 .dropdown-content {
     display: none;
     position: absolute;
     right: 0;
     background-color: #f1f1f1;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 gray;
     z-index: 1;
     padding: 0;
   }
@@ -100,10 +92,10 @@ ul li {
 .dropdown-content a:hover {
     background-color: #ddd;
     }
-.hamburger-menu:hover .dropdown-content {
+.nav-container:hover .dropdown-content {
     display: block;
     }
-.hamburger-menu:hover .menu-button {
+.nav-container:hover .menu-button {
     background-color: white;
   }
   .find-out-more {
@@ -195,10 +187,10 @@ ul li {
   .dropdown-content a:hover {
       background-color: transparent;
       }
-  .hamburger-menu:hover .dropdown-content {
+  .nav-container:hover .dropdown-content {
       display: flex;
       }
-  .hamburger-menu:hover .menu-button {
+  .nav-container:hover .menu-button {
       background-color: transparent;
     }
     .form-container {
