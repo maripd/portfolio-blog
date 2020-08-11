@@ -1,12 +1,15 @@
 body {
     margin: 0;
 }
+
 main {
     grid-area: main;
 } 
+
 footer {
     grid-area: ft;
 }
+
 .overall-container {
     max-width: 900px;
     justify-content: center;
@@ -19,22 +22,27 @@ footer {
       "main"
       "ft";
 }
-a {
+
+.socialmedia-url{
     text-decoration: none;
 }
+
 .logonavcontainer {
     width: 100%;
     display: flex;
     flex-direction: column;;   
 }
+
 .headerbox1 { 
     display: flex;
     justify-content: space-between;
     padding: 20px 10px 40px 10px;
 }
+
 .logonamecontainer {
     padding: 0 10px 0 10px;
 }
+
 .logoname1 {
     font-family: Reem Kufi;
     color: black;
@@ -43,6 +51,7 @@ a {
     position: relative;
     bottom: 2px;
 }
+
 .logoname2 {
     margin: 15px 8px 10px 0px;
     padding: 0;
@@ -54,17 +63,25 @@ a {
     bottom: 2px;
     letter-spacing: 1.5px
 }
+
 .burgericon {
     margin: 0;
     width: 24px;
 }
+
+.logo-url {
+    text-decoration: none;
+}
+
 ul {
     list-style-type: none;
 }
+
 ul li {
     background-color: #b3cbe6;
     opacity: .6;
 }
+
 .menu-button {
     background-color: white;
     color: white;
@@ -72,6 +89,7 @@ ul li {
     border: none;
     margin-right: 10px;
   }
+
 .dropdown-content {
     display: none;
     position: absolute;
@@ -81,39 +99,48 @@ ul li {
     z-index: 1;
     padding: 0;
   }
-.dropdown-content a {
+
+.dropdown-content .nav-url {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
   }
-.dropdown-content a:hover {
+
+.dropdown-content .nav-url:hover {
     background-color: #ddd;
     }
+
 .nav-container:hover .dropdown-content {
     display: block;
     }
+
 .nav-container:hover .menu-button {
     background-color: white;
   }
-  .find-out-more {
+
+.find-out-more {
     font-family: Libre Baskerville;
     color: #254451;
     font-weight: 500;
     text-align: center;
 }
+
 .form-container {
   display: flex;
   flex-direction: column;
   margin: 50px 0 50px 0;
 }
+
 #form-elements {
   margin: auto;
 }
+
 #enter-email {
   text-align: center;
   font-family: Libre Baskerville;
 }
+
 .get-updates-button {
   display: block;
   color: white;
@@ -127,10 +154,12 @@ ul li {
   border: none;
   border-radius: 3px
 }
+
 .footer-span {
     display: flex;
     justify-content: center;
 }
+
 .footer-logo1, .footer-logo2 {
   font-family: Reem Kufi;
   color: black;
@@ -139,6 +168,7 @@ ul li {
   font-weight: lighter;
   margin: 0 3px 0 0px;
 }
+
 .footer-logo2 {
   font-family: Reem Kufi;
   color: #8db4c4;
@@ -146,51 +176,63 @@ ul li {
   font-weight: lighter;
   letter-spacing: 1.8px;
 }
+
 .socialmedia-container {
   display: flex;
   justify-content: center;
   padding-bottom: 20px;
 }
+
 #social-media-icon {
   width: 40px;
   padding: 10px;
 }
+
 #enter-email {
   padding: 10px; 
 }
+
 
 
 @media screen and (min-width: 1000px) {
   .hero-text {
       font-size: 24px;
   }
+
   .menu-button {
       display: none;
   }
+
   .dropdown-content {
       display: flex;
       position: relative;
       box-shadow: none;
       background-color: transparent;
   }
-  .dropdown-content a {
+
+  .dropdown-content .socialmedia-url {
       color: black;
       padding: 0 15px 0 15px;
       font-family: Roboto Condensed;
   }
+
   ul li {
       background-color: transparent;
       font-family: Roboto Condensed;
   }
-  .dropdown-content a:hover {
+
+  .dropdown-content .socialmedia-url:hover {
       background-color: transparent;
       }
+
   .nav-container:hover .dropdown-content {
       display: flex;
       }
+
   .nav-container:hover .menu-button {
       background-color: transparent;
     }
+
     .form-container {
       display: flex;
       flex-direction: row;
@@ -200,11 +242,13 @@ ul li {
       border-color: #dadde0;
       padding: 15px;
     }
+
     input {
         width: 250px;
         border: 1px solid;
         border-color: darkgrey;
     }
+
     #form-elements {
       margin: 15px 15px 15px 15px;
     }
